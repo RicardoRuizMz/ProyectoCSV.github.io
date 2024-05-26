@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lector de CSV</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h2>CSV Data</h2>
+        <table id="CsvTable">
+            <thead>
+                <tr>
+                    <td>Nombre y apellido</td>
+                    <td>Correo</td>
+                    <td>Edad</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Toda la informacion se hace desde JS -->
+            </tbody>
+        </table>
+        <div class="controls">
+            <input type="file" accept=".csv" id="csvFileInput">
+            <button class="btn" onclick="insertData()">Insertar Datos</button>
+            <button class="btn" onclick="deleteData()">Borrar Datos</button>
+            <button class="btn" onclick="saveCSV()">Guardar CSV</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
